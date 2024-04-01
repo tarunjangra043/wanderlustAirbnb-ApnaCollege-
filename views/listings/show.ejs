@@ -15,13 +15,17 @@
 
       <div class="card-body">
         <p class="card-text">
-          <b>Description : </b> <%= listing.description %> <br />
-          <b>Title : </b><%= listing.title %> <br />
-          <b>Price : </b> &#8377; <%= listing.price.toLocaleString('en-IN') %>
-          <br />
-          <b>Location : </b><%= listing.location %> <br />
-          <b>Country : </b><%= listing.country %>
+          <i>Owned By : <%= listing.owner.username %></i>
         </p>
+        <p class="card-text">
+          <b>Description : </b> <%= listing.description %>
+        </p>
+        <p class="card-text"><b>Title : </b><%= listing.title %></p>
+        <p class="card-text">
+          <b>Price : </b> &#8377; <%= listing.price.toLocaleString('en-IN') %>
+        </p>
+        <p class="card-text"><b>Location : </b><%= listing.location %></p>
+        <p class="card-text"><b>Country : </b><%= listing.country %></p>
       </div>
     </div>
   </div>
